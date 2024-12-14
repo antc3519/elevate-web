@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  BrowserRouter,
 } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
@@ -15,7 +16,7 @@ import { Contact } from "./pages/Contact";
 
 export default function App() {
   return (
-    <Router>
+    <BrowserRouter basename="/elevate-web">
       <div className="overflow-x-hidden">
         <div className="relative grid min-h-[100vh] w-screen">
           <ComplexNavbar />
@@ -30,6 +31,6 @@ export default function App() {
         </div> 
         <Footer/>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
