@@ -153,11 +153,15 @@ function NavListMenu() {
       </MenuItem>
     </NavLink>
   ));
- 
+
   return (
     <React.Fragment>
       <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
-        <MenuHandler>
+        {
+        
+        // UNCOMMENT WHEN PROGRAMS ARE IMPLEMENTED
+
+        /* <MenuHandler>
           <Typography as="a" href="#" variant="small" className="font-normal">
             <MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full">
               <AcademicCapIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "}
@@ -170,7 +174,7 @@ function NavListMenu() {
               />
             </MenuItem>
           </Typography>
-        </MenuHandler>
+        </MenuHandler> */}
         <MenuList className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid">
           <Card
             color="blue"
@@ -185,13 +189,17 @@ function NavListMenu() {
           </ul>
         </MenuList>
       </Menu>
+      {/* 
+      
+        TO BE IMPLEMENTED IN FUTURE
+
       <MenuItem className="flex items-center gap-2 font-medium text-blue-gray-900 lg:hidden">
         <AcademicCapIcon className="h-[18px] w-[18px] text-blue-gray-500" />{" "}
         Programs{" "}
       </MenuItem>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
-      </ul>
+      </ul> */}
     </React.Fragment>
   );
 }
@@ -202,10 +210,10 @@ const navListItems = [
     label: "About",
     icon: InformationCircleIcon,
   },
-  {
-    label: "Resources",
-    icon: BookOpenIcon,
-  },
+  // {
+  //   label: "Resources",
+  //   icon: BookOpenIcon,
+  // },
   {
     label: "Contact",
     icon: PhoneIcon,
@@ -276,7 +284,11 @@ export function ComplexNavbar() {
             <Bars2Icon className="h-6 w-6" />
           </IconButton>
   
-          <ProfileMenu />
+          {/* 
+          
+          TO BE IMPLEMENTED IN FUTURE
+          
+          <ProfileMenu /> */}
         </div>
         <MobileNav open={isNavOpen}>
           <NavList />
