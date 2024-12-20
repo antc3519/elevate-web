@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/elevate-web/static/css/main.5b85a7a7.css",
-    "main.js": "/elevate-web/static/js/main.99baf81e.js",
-    "index.html": "/elevate-web/index.html",
-    "main.5b85a7a7.css.map": "/elevate-web/static/css/main.5b85a7a7.css.map",
-    "main.99baf81e.js.map": "/elevate-web/static/js/main.99baf81e.js.map"
+    "main.css": "/static/css/main.5b85a7a7.css",
+    "main.js": "/static/js/main.d0b85070.js",
+    "index.html": "/index.html",
+    "main.5b85a7a7.css.map": "/static/css/main.5b85a7a7.css.map",
+    "main.d0b85070.js.map": "/static/js/main.d0b85070.js.map"
   },
   "entrypoints": [
     "static/css/main.5b85a7a7.css",
-    "static/js/main.99baf81e.js"
+    "static/js/main.d0b85070.js"
   ]
 }
