@@ -257,7 +257,7 @@ export function ComplexNavbar() {
 
   return (
     <div className="absolute w-full flex p-8 justify-center z-50">
-      <Navbar className="max-w-screen-xl p-2 lg:rounded-full lg:pl-6 pl-100 mx-20">
+      <Navbar className="max-w-screen-xl p-2 lg:rounded-full lg:pl-6 pl-100 md:mx-20 sm:mx-0">
         <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
           <NavLink
             as="a"

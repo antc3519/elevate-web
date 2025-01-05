@@ -1,10 +1,12 @@
 import { Logo } from "../components/Logo";
-import { Typography, Card } from "@material-tailwind/react";
+import { Button, Typography, Card } from "@material-tailwind/react";
 import { NavLink } from "react-router-dom";
 
 export function Home() {
   return(
     <div>
+      
+      {/* HEADER */}
       <section className="pt-32 pb-40 text-center place-items-center">
           <Logo scale="350px"/>
           <Typography variant="h2" color="blue-gray" className="pt-5">
@@ -14,12 +16,11 @@ export function Home() {
           Where Innovation Meets Community & Global Opportunity
           </Typography>
       </section>
+
+      {/* ABOUT */}
       <section>
-        <Typography variant="h3" color="blue-gray" className="pb-2 text-center ">
-          About Us
-        </Typography>
         <hr className="pb-10"/>
-        <Typography variant="lead" className="pb-20 mx-auto max-w-screen-lg text-center">
+        <Typography variant="lead" className="pb-5 mx-auto max-w-screen-lg text-center">
           At Project Elevate, we are committed to transforming lives and communities by bridging the gap 
           between technology, education, and opportunity. Focused on empowering black and brown students, 
           we develop cutting-edge AI and robotics curriculums, foster corporate partnerships, and address 
@@ -27,7 +28,16 @@ export function Home() {
           Our work ensures students are equipped with the tools, skills, and experiences they need to 
           succeed in a rapidly evolving tech-driven world.
         </Typography>
+        <div className="flex justify-center pb-20">
+          <NavLink
+          as="a"
+          to="/About">
+            <Button size="lg" color="">Read More</Button>
+          </NavLink>
+        </div>
       </section>
+
+      {/* SERVICES */}
       <section>
         <Typography variant="h3" color="blue-gray" className="pb-2 text-center ">
           Our Services
@@ -91,11 +101,11 @@ export function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 float-left pr-1">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
-                Summer 2025 Full-Time ($20/hour)<br/>
+                Summer 2025 Full-Time ($22/hour)<br/>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 float-left pr-1">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
-                Academic Year Part-Time ($17/hour)<br/>
+                Academic Year Part-Time ($20/hour)<br/>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 float-left pr-1">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                 </svg>
@@ -137,6 +147,8 @@ export function Home() {
           
         </div>
       </section>
+
+      {/* PARTNERS */}
       <section>
         <Typography variant="h3" color="blue-gray" className="pb-2 text-center ">
           Our Partners
@@ -144,22 +156,25 @@ export function Home() {
         <hr className="pb-10"/>
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 max-w-screen-2xl justify-self-center">
             <img class="object-cover object-center w-full max-w-md rounded-lg"
-              src="media/partnerLogos/newarkLogo.png"
+              src={process.env.PUBLIC_URL + '/media/partnerLogos/newarkLogo.png'}
               alt="gallery-photo" />
             <img class="object-cover object-center w-full max-w-md rounded-lg"
-              src="media/partnerLogos/investNewark.png"
+              src={process.env.PUBLIC_URL + '/media/partnerLogos/investNewark.png'}
               alt="gallery-photo" />
             <img class="object-cover object-center w-full max-w-md rounded-lg"
-              src="media/partnerLogos/newarkAlliance.png"
+              src={process.env.PUBLIC_URL + '/media/partnerLogos/newarkAlliance.png'}
               alt="gallery-photo" />
             <img class="object-cover object-center w-full max-w-md rounded-lg"
-              src="media/partnerLogos/njiiLogo.png"
+              src={process.env.PUBLIC_URL + '/media/partnerLogos/njiiLogo.png'}
               alt="gallery-photo" />
             <img class="object-cover object-center w-full max-w-md rounded-lg"
-              src="media/partnerLogos/njitLogo.png"
+              src={process.env.PUBLIC_URL + '/media/partnerLogos/njitLogo.png'}
               alt="gallery-photo" />
             <img class="object-cover object-center w-full max-w-md rounded-lg"
-              src="media/partnerLogos/westSideLogo.png"
+              src={process.env.PUBLIC_URL + '/media/partnerLogos/westsideLogo.png'}
+              alt="gallery-photo" />
+            <img class="object-cover object-center w-full max-w-md rounded-lg"
+              src={process.env.PUBLIC_URL + '/media/partnerLogos/marcoLogo.png'}
               alt="gallery-photo" />
         </div>
       </section>

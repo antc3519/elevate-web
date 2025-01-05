@@ -10,26 +10,23 @@ export function Footer() {
             className="flex justify-center space-x-3 lg:justify-start"
             to="/">
             <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-600">
-            <Logo scale="350px"/>
+            <Logo type="no-text" scale="350px"/>
             </div>
             <span className="self-center text-2xl font-semibold">Project Elevate</span>
           </NavLink>
         </div>
-        <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+        <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4 text-center sm:text-left">
           <div className="space-y-3">
-            <h3 className="tracking-wide uppercase dark:text-gray-900">Product</h3>
+            <h3 className="tracking-wide uppercase dark:text-gray-900">Programs</h3>
             <ul className="space-y-1">
               <li>
-                <a href="#">Features</a>
+                <NavLink to="/">Features</NavLink>
               </li>
               <li>
-                <a href="#">Integrations</a>
+                <NavLink to="/">Features</NavLink>
               </li>
               <li>
-                <a href="#">Pricing</a>
-              </li>
-              <li>
-                <a href="#">FAQ</a>
+                <NavLink to="/">Features</NavLink>
               </li>
             </ul>
           </div>
@@ -37,7 +34,10 @@ export function Footer() {
             <h3 className="tracking-wide uppercase dark:text-gray-900">Company</h3>
             <ul className="space-y-1">
               <li>
-                <a href="#">Privacy</a>
+                <NavLink to="/contact">Contact</NavLink>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
               </li>
               <li>
                 <a href="#">Terms of Service</a>
@@ -45,22 +45,25 @@ export function Footer() {
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className="uppercase dark:text-gray-900">Developers</h3>
+            <h3 className="uppercase dark:text-gray-900">Students</h3>
             <ul className="space-y-1">
               <li>
-                <a href="#">Public API</a>
-              </li>
-              <li>
-                <a href="#">Documentation</a>
+                <a href="#">Student Login</a>
               </li>
               <li>
                 <a href="#">Guides</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Help Desk</a>
               </li>
             </ul>
           </div>
           <div className="space-y-3">
             <div className="uppercase dark:text-gray-900">Social media</div>
-            <div className="flex justify-start space-x-3">
+            <div className="flex justify-center space-x-3 sm:justify-start">
               <a href="#" title="Facebook" className="flex items-center p-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-5 h-5 fill-current">
                   <path d="M32 16c0-8.839-7.167-16-16-16-8.839 0-16 7.161-16 16 0 7.984 5.849 14.604 13.5 15.803v-11.177h-4.063v-4.625h4.063v-3.527c0-4.009 2.385-6.223 6.041-6.223 1.751 0 3.584 0.312 3.584 0.312v3.937h-2.021c-1.984 0-2.604 1.235-2.604 2.5v3h4.437l-0.713 4.625h-3.724v11.177c7.645-1.199 13.5-7.819 13.5-15.803z"></path>

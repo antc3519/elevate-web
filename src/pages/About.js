@@ -4,7 +4,11 @@ import { NavLink } from "react-router-dom";
 export function About() {
   return(
     <div>
-      <section style={{backgroundImage: `url("media/newarkSkyline.png")`}} className="flex-col gap-2 mb-5 pt-56 pb-56 text-center place-items-center bg-cover">
+      <section style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL + '/media/newarkSkyline.png'})`,
+        transform: `translateX(-2rem)`,
+        width: `calc(100% + 4rem)`
+        }} className="flex-col gap-2 mb-5 pt-56 pb-56 text-center place-items-center bg-cover">
           <Typography variant="h2" color="blue-gray" className="pt-5">
           Building New Jersey's Future, Together
           </Typography>
@@ -88,7 +92,7 @@ export function About() {
         <ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 lg:col-span-3">
           <li>
             <div class="flex items-center gap-x-6">
-              <img class="size-32 rounded-full" src="media/headshots/fakhairSpence.png" alt="Fakhair"/>
+              <img class="size-32 rounded-full" src={process.env.PUBLIC_URL + '/media/headshots/fakhairSpence.png'} alt="Fakhair"/>
               <div>
                 <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Fakhair Spence</h3>
                 <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
@@ -97,10 +101,10 @@ export function About() {
           </li>
           <li>
             <div class="flex items-center gap-x-6">
-              <img class="size-32 rounded-full" src="media/headshots/anthonyCaruso.png" alt="Anthony"/>
+              <img class="size-32 rounded-full" src={process.env.PUBLIC_URL + '/media/headshots/anthonyCaruso.png'} alt="Anthony"/>
               <div>
                 <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Anthony Caruso</h3>
-                <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / ????</p>
+                <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CTO</p>
               </div>
             </div>
           </li>
